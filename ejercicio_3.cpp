@@ -10,8 +10,8 @@ struct Estudiante {
 };
 
 
-struct Estudiante copiarEstudiante(struct Estudiante original) {
-    struct Estudiante copia;
+struct Estudiante copiarEstudiante( Estudiante original) {
+    Estudiante copia;
     copia.edad = original.edad;
     copia.promedio = original.promedio;
     strcpy(copia.nombre, original.nombre);
@@ -20,13 +20,13 @@ struct Estudiante copiarEstudiante(struct Estudiante original) {
 
 int main() {
 
-    struct Estudiante estudiante1;
+     Estudiante estudiante1;
     estudiante1.edad = 20;
     estudiante1.promedio = 85.5;
     strcpy(estudiante1.nombre, "Juan");
 
 
-    struct Estudiante estudianteCopia = copiarEstudiante(estudiante1);
+     Estudiante estudianteCopia = copiarEstudiante(estudiante1);
 
     printf("Estudiante original:\n");
     printf("Nombre: %s\n", estudiante1.nombre);
